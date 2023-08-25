@@ -1,8 +1,7 @@
-/* Reset some default styling */
-body, h1, p, ul {
+/* Reset default styling */
+body, h1, h2, h3, p, ul, li, a {
   margin: 0;
   padding: 0;
-  
 }
 
 body {
@@ -12,36 +11,59 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  text-align: center;
   padding: 1rem;
 }
 
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.product-info {
+nav {
   display: flex;
-  margin-left: 200px;
-  padding: 3rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.product-info img {
-  max-width: 50%;
+.logo {
+  font-size: 1.5rem;
 }
 
-.description {
-  padding: 1rem;
+nav ul {
+  list-style: none;
+  display: flex;
 }
 
-button {
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.cta-button {
+  display: inline-block;
   background-color: #333;
   color: #fff;
-  border: none;
   padding: 0.5rem 1rem;
-  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.services {
+  padding: 4rem 0;
+}
+
+.service {
+  padding: 2rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.portfolio {
+  padding: 4rem 0;
 }
 
 footer {
@@ -49,8 +71,4 @@ footer {
   padding: 1rem;
   background-color: #333;
   color: #fff;
-    position: fixed;
-  bottom: 10px;
-width: 100%;
 }
-
